@@ -4,6 +4,14 @@ Otherwise she/he will answer I don't care, get dressed and go to work! -->
 
 
 <h1>Stupid Coaching</h1>
-<p>question =<%= @question %> - you</p>
-<p>answer = <%= @answer %> - your coach</p>
+<div class="gridContainer">
+  <div class="myQuestion">
+    <p><%= @question %></p>
+    <p> - you</p>
+  </div>
+  <div class="coachAnswer">
+    <p><%= @answer %></p>
+    <p>- your coach</p>
+  </div>
+</div>
 <%= link_to "Ask another question", "/ask" %>
